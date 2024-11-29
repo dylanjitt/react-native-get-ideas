@@ -61,6 +61,11 @@ jobs:
           bundle update --bundler
           bundle config path vendor/bundle
           bundle install --jobs 4 --retry 3
+        
+      - name: install xd
+        run: |
+          cd android
+          bundle exec fastlane add_plugin firebase_app_distribution
 
       - name: Distribute app with 🔥 App Distribution 🚀
         env:
