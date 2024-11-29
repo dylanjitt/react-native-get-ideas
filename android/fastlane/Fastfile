@@ -46,7 +46,7 @@ platform :android do
     #Distribute the app  to firebase
     echo(message: "Deploying.....")
     firebase_app_distribution(
-      #app: "1:609984977515:android:15a4033bd2c91e7825ef2e", # Replace with your Firebase app ID
+      #app: "1:821536069638:android:ba6843c506600182d64b87", # Replace with your Firebase app ID
       #service_credentials_file: "service-account.json",
       service_credentials_json_data: ENV['GOOGLE_APPLICATION_CREDENTIALS'],
       app: ENV['FIREBASE_APP_ID'],
